@@ -1,7 +1,11 @@
 .header {
   margin: 0 auto;
-  min-height: 670px;
+  min-height: 470px;
   position: relative;
+}
+
+.header--menu-open {
+  min-height: 820px;
 }
 
 .header__wrapper {

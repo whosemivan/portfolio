@@ -11,9 +11,11 @@ nav.classList.add('visually-hidden');
 button.addEventListener('click', function() {
   nav.classList.toggle('visually-hidden');
   button.classList.toggle('header__btn--opened');
+  header.classList.toggle('header--menu-open');
 });
 
-mainLink.addEventListener('click', () => {
+mainLink.addEventListener('click', (evt) => {
+  evt.preventDefault();
   headerTitle.classList.add('header__title__wrapper--animation');
 
   setTimeout(() => {

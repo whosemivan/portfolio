@@ -1,9 +1,11 @@
 .main-nav {
   margin-bottom: 25px;
+  min-height: 340px;
 }
 
 .main-nav__list {
   @include list;
+  padding-top: 30px;
 }
 
 .main-nav__item {
@@ -11,14 +13,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 5px ridge $purple;
-}
-
-.main-nav__item:last-child {
-  border-bottom: 5px ridge $purple;
 }
 
 .main-nav__link {
   color: $green;
   font-size: $p-mobile;
+}
+
+.main-nav__image {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
 }
