@@ -1,0 +1,61 @@
+@keyframes ufo-driver {
+    0% {
+      left: 33px;
+      top: 21px;
+      transform: scale(1);
+    }
+  
+    50% {
+      top: 100px;
+      left: 260px;
+      transform: scale(1.5) rotate(90deg);
+    }
+  
+    100% {
+        left: 17px;
+        top: 225px;
+        transform: scale(2);
+    }
+  }
+  
+  @keyframes ufo-driver-left {
+    0% {
+        left: 17px;
+        top: 225px;
+        transform: scale(2);
+    }
+  
+    50% {
+      transform: scale(3) rotate(90deg);
+      top: 225px;
+    }
+  
+    100% {
+        left: 400px;
+        display: none;
+        top: 225px;
+    }
+  }
+
+  @keyframes ufo-driver-coming {
+    0% {
+        right: -200px;
+        top: 225px;
+    }
+  
+    100% {
+        right: -25px;
+        top: 285px;
+    }
+  }
+
+  
+  @keyframes ufo-driver-flying {
+    0% {
+        top: 285px;
+    }
+  
+    100% {
+        top: 275px;
+    }
+  }

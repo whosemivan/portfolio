@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>alienDev</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="#" class="header__logo">
+        <img src="img/logo.svg" alt="Логотипа">
+      </a>
+      <button class="header__btn header__btn--close" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Обо мне</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Портфолио</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Связаться со мной</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="header__title">Привет, я занимаюсь <span>разработкой сайтов</span>.</h1>
+    <p class="header__text">Это мой сайт <span>портфолио</span>.</p>
+    <a class="header__link" href="#">Мои работы</a>
+  </header>
+  <main>
+    <section class="about-me">
+      <h2 class="about-me__title">Кто я такой?</h2>
+      <p class="about-me__text">Изучаю фронтенд более 2-ух лет. Обучаюсь в IT колледже на веб-разработчика, участвовал в
+        нескольких проектах в качестве фронтендера.</p>
+      <picture></picture>
+      <h3 class="about-me__name">Семёненко Иван</h3>
+      <p class="about-me__positions">frontend-разработчик, веб-дизайнер</p>
+      <div class="about-me__soc">
+        <ul class="about-me__soc-list">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <a href="alienba6y@gmail.com">alienba6y@gmail.com</a>
+    </section>
+    <section class="technology">
+      <h2 class="technology__title">Технологии и методологии</h2>
+      <ul class="technology__list">
+        <li class="technology__item">HTML5</li>
+        <li class="technology__item">CSS3</li>
+        <li class="technology__item">Sass/Less</li>
+        <li class="technology__item">JavaScript</li>
+        <li class="technology__item">React</li>
+        <li class="technology__item">БЭМ</li>
+        <li class="technology__item">Git</li>
+        <li class="technology__item">Gulp/Webpack</li>
+        <li class="technology__item">Photoshop, Figma</li>
+        <li class="technology__item">WordPress</li>
+      </ul>
+    </section>
+    <section class="education">
+      <h2 class="education__title">Образование</h2>
+      <article class="education__item">
+        <h4 class="education__item-title">HTML academy</h4>
+        <p class="education__item-text">Профессия React-разработчик</p>
+        <span class="education__date">2020 - 2021</span>
+      </article>
+      <article class="education__item">
+        <h4 class="education__item-title">IThub college</h4>
+        <p class="education__item-text">Специальность Веб- и Мультимедийная разработка</p>
+        <span class="education__date">2020 - 2024</span>
+      </article>
+      <div>
+        <!-- slider -->
+      </div>
+    </section>
+    <section class="portfolio">
+      <h2 class="portfolio__title">Портфолио</h2>
+      <div class="portfolio__wrapper">
+        <article class="portfolio__card">
+          <h4 class="portfolio__card-title">Сайт для grean clean</h4>
+          <span class="portfolio__card-title">18 августа 2021</span>
+          <picture></picture>
+        </article>
+        <article class="portfolio__card">
+          <h4 class="portfolio__card-title">Сайт для grean clean</h4>
+          <span class="portfolio__card-title">18 августа 2021</span>
+          <picture></picture>
+        </article>
+        <article class="portfolio__card">
+          <h4 class="portfolio__card-title">Сайт для grean clean</h4>
+          <span class="portfolio__card-title">18 августа 2021</span>
+          <picture></picture>
+        </article>
+        <button class="portfolio__btn">Больше</button>
+      </div>
+    </section>
+    <section class="block-form">
+      <h2 class="block-form__title">Связаться со мной</h2>
+      <form class="block-form__form" action="">
+        <label class="block-form__label" for="name">Имя:</label>
+        <input class="block-form__input" id="name" name="name" type="text" placeholder="Имя">
+        <label class="block-form__label" for="email">Email:</label>
+        <input class="block-form__input" id="email" name="email" type="email">
+        <label class="block-form__label" for="help">Как я могу вам помочь?</label>
+        <input class="block-form__input" id="help" name="help" type="text">
+        <button class="block-form__btn" type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
