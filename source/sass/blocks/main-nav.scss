@@ -1,0 +1,24 @@
+.main-nav {
+  margin-bottom: 25px;
+}
+
+.main-nav__list {
+  @include list;
+}
+
+.main-nav__item {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 5px ridge $purple;
+}
+
+.main-nav__item:last-child {
+  border-bottom: 5px ridge $purple;
+}
+
+.main-nav__link {
+  color: $green;
+  font-size: $p-mobile;
+}
