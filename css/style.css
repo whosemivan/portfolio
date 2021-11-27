@@ -44,7 +44,6 @@
     top: 143px; }
   100% {
     left: 400px;
-    display: none;
     top: 143px; } }
 
 @keyframes ufo-driver-left {
@@ -59,7 +58,6 @@
     top: 143px; }
   100% {
     left: 400px;
-    display: none;
     top: 143px; } }
 
 @-webkit-keyframes ufo-driver-coming {
@@ -109,7 +107,7 @@ img {
 
 .header {
   margin: 0 auto;
-  min-height: 470px;
+  height: 100vh;
   position: relative; }
 
 .header--menu-open {
@@ -217,6 +215,18 @@ img {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
+.header__title--hidden-decorate-element::before {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 .header__title--decoration-element-animation::after {
   content: "";
   background-image: url("../img/ufo-driver.svg");
@@ -256,12 +266,6 @@ img {
   margin-bottom: 25px;
   min-height: 340px; }
 
-.main-nav__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-top: 30px; }
-
 .main-nav__item {
   min-height: 60px;
   display: -webkit-box;
@@ -278,8 +282,92 @@ img {
   color: #00f38d;
   font-size: 18px; }
 
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  opacity: 1; }
+
 .main-nav__image {
   position: absolute;
   top: 0;
   z-index: -1;
   width: 100%; }
+
+.about-me {
+  min-height: 1025px;
+  width: 280px;
+  margin: 0 auto;
+  position: relative; }
+  .about-me::before {
+    content: "";
+    background-image: url("../img/planet.svg");
+    position: absolute;
+    width: 297px;
+    height: 270px;
+    bottom: 0; }
+
+.about-me__title {
+  font-size: 22px;
+  color: #fdf3f2;
+  margin: 0;
+  margin-bottom: 25px; }
+
+.about-me__text {
+  font-size: 18px;
+  color: #00f38d;
+  position: relative;
+  margin: 0;
+  margin-bottom: 25px; }
+  .about-me__text::before {
+    content: "";
+    background-image: url("../img/image-decorate.svg");
+    width: 117px;
+    height: 177px;
+    position: absolute;
+    top: 175px;
+    left: -20px; }
+  .about-me__text::after {
+    content: "";
+    background-image: url("../img/image-decorate.svg");
+    width: 117px;
+    height: 177px;
+    position: absolute;
+    top: 417px;
+    right: -60px; }
+
+.about-me__name {
+  font-size: 20px;
+  color: #fdf3f2;
+  margin: 0; }
+
+.about-me__positions {
+  margin: 0;
+  color: #00f38d;
+  font-size: 18px;
+  width: 200px;
+  margin-bottom: 25px; }
+
+.about-me__soc {
+  margin-bottom: 25px; }
+
+.about-me__soc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.about-us__email {
+  color: #00f38d;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
