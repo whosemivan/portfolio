@@ -1,0 +1,81 @@
+.about-me {
+  min-height: 1025px;
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../img/planet.svg");
+    position: absolute;
+    width: 297px;
+    height: 270px;
+    bottom: 0;
+  }
+}
+
+.about-me__title {
+  font-size: $h2-mobile;
+  color: $white;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.about-me__text {
+  font-size: $p-mobile;
+  color: $green;
+  position: relative;
+  margin: 0;
+  margin-bottom: 25px;
+
+  &::before {
+    content: "";
+    background-image: url("../img/image-decorate.svg");
+    width: 117px;
+    height: 177px;
+    position: absolute;
+    top: 175px;
+    left: -20px;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../img/image-decorate.svg");
+    width: 117px;
+    height: 177px;
+    position: absolute;
+    top: 417px;
+    right: -60px;
+  }
+}
+
+.about-me__name {
+  font-size: $h3-mobile;
+  color: $white;
+  margin: 0;
+}
+
+.about-me__positions {
+  margin: 0;
+  color: $green;
+  font-size: $p-mobile;
+  width: 200px;
+  margin-bottom: 25px;
+}
+
+.about-me__soc {
+  margin-bottom: 25px;
+}
+
+.about-me__soc-list {
+  @include list;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-us__email {
+  color: $green;
+  font-size: $p-mobile;
+  display: flex;
+  justify-content: center;
+}

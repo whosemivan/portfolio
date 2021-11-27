@@ -3,11 +3,6 @@
   min-height: 340px;
 }
 
-.main-nav__list {
-  @include list;
-  padding-top: 30px;
-}
-
 .main-nav__item {
   min-height: 60px;
   display: flex;
@@ -18,6 +13,12 @@
 .main-nav__link {
   color: $green;
   font-size: $p-mobile;
+}
+
+.main-nav__list {
+  @include list;
+  padding-top: 30px;
+  opacity: 1;
 }
 
 .main-nav__image {
